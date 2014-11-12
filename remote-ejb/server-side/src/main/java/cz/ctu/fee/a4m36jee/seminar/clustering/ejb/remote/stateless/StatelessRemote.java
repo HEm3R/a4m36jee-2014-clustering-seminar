@@ -21,9 +21,12 @@
  */
 package cz.ctu.fee.a4m36jee.seminar.clustering.ejb.remote.stateless;
 
+import javax.ejb.Remote;
+
 /**
  * @author Ondrej Chaloupka
  */
+@Remote
 public interface StatelessRemote {
 
     /**

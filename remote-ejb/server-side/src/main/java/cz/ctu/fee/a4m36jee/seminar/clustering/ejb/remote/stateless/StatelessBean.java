@@ -21,14 +21,18 @@
  */
 package cz.ctu.fee.a4m36jee.seminar.clustering.ejb.remote.stateless;
 
+import javax.ejb.Stateless;
+
+import cz.ctu.fee.a4m36jee.seminar.clustering.ejb.remote.util.NodeNameGetter;
+
 /**
  * @author Ondrej Chaloupka
  */
+@Stateless
 public class StatelessBean implements StatelessRemote {
 
     @Override
     public String getNodeName() {
-        // TODO: implement
-        throw new UnsupportedOperationException();
+        return NodeNameGetter.getNodeName();
     }
 }

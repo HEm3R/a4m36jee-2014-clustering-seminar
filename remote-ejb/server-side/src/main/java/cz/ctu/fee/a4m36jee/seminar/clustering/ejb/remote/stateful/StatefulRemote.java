@@ -23,9 +23,12 @@ package cz.ctu.fee.a4m36jee.seminar.clustering.ejb.remote.stateful;
 
 import java.util.List;
 
+import javax.ejb.Remote;
+
 /**
  * @author Ondrej Chaloupka
  */
+@Remote
 public interface StatefulRemote {
 
     /**
